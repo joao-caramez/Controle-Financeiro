@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Controle de gastos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+   <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    </head>
+<body>
+    <nav id="menu">
+                <ul>
+            <img src="wweb3.png" id="foteenha">
+            <li><a href="home.html" style="color:white">Seja bem Vinda(o)</a></li>
+          <li ><a href="index.html" style="color:rgb(0, 162, 255)">Cálculo</a></li>
+            <li  id="sobresty"><a href="SobreNós.html" style="color:white;">Sobre-nós</a></li>
+            <li id="intuito"><a href="intuito.html" style="color:white;">Nosso intuito</a></li>
+            <li id="dicas"><a href="dicas.html" style="color:white">Dicas</a></li>
+       </ul>
+ </nav>
+</div>
+   <div id="plc">
+            <p >
+                <h1 id="tituloh1" >Calcular Controle Financeiro</h1></p>
+                <p>Insira sua renda mensal:</p>
+                <input type="number" id="placeholder1"  placeholder="Ex: Salário do Mês" tittle="Sua renda" pattern="[A-Za-z]" required=required/>
+                
+                <p>Escolha o tipo de gasto:</p>
+                <input type="text" id="placeholder5" placeholder=" Lazer, Roupas, Aparelhos Eletrônicos"  pattern="[A-Za-z]" required=required/>
+
+                
+                <p>Insira o seu gasto mensal:</p>
+                <input type="placeholder" id="placeholder2" placeholder="Ex: Quanto gasta por mês " tittle="Seus gastos" >
+                
+                <p>Insira seu nome:</p>
+                <input type="placeholder" id="placeholder4" placeholder="Ex: Maria, João" tittle="Sua renda" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"required="required"> 
+                
+                <p>Resultado:</p>
+                <input type="placeholder" id="placeholder3" title="Seu Resultado" disabled>
+                <br>
+                <div id="btcalculo">
+                <input type='submit' onclick="botao()" id='botao' href="intuito.html" value="Calcular">
+                <button type='reset' onclick="clearDisplay()" id='botaoclear'>limpar</button>
+            </div>
+        </div>
+        </div>
+                <h1 id="result">Resultado:</h1>
+                <div id='test'></div>
+            <script>
+           $(function() {
+        var esportes = [
+          "Lazer",
+          "Aparelhos Eletrônicos",
+          "Roupas"
+        ];
+        $("#placeholder5" ).autocomplete({
+          source: esportes
+        });
+      });
+            
+            </script> 
+  
+</body>
+</html>

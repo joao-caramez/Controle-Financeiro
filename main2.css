@@ -1,0 +1,74 @@
+
+#div1{
+    position: absolute;
+    left: 50%;
+    top:25%;
+    margin: 20px;
+    animation-name: pob;
+    animation-duration: 2s;
+    
+}
+ #img2{
+     
+     width: 45%;
+     position:absolute;
+     left: 2%;
+     top:18%;
+     animation-name: fade ;
+     animation-duration: 2s;
+        }
+        @keyframes fade {
+            from{
+                opacity: 0;
+                transform: translateX(25%)
+                }
+                to{
+                opacity: 1;
+                transform: translateX(0%)
+                }
+        }
+
+        #titulo1{
+            animation-name: pob;
+            animation-duration:2s;
+            top: 17%;
+            left:55%;
+            position:absolute;
+        }
+        @keyframes pob{
+            from{
+                opacity: 0;
+                transform: translateX(-25%)
+                }
+                to{
+                opacity: 1;
+                transform: translateX(0%)
+                }
+        }
+        #titulo2{
+            position: absolute;
+            top:90%;
+            margin: 20px;
+            left:5%;
+            animation-name: fade;
+            animation-duration:2s
+            
+        }
+        #div2{
+            position: absolute;
+            top:100%;
+            right: 48%;
+            margin: 40px;
+            animation-name: fade;
+            animation-duration:2s;
+                
+            }
+        
+        #img3{
+            position: absolute;
+            top:95%;
+            width: 45%;
+            right: 2%;
+            animation-name:pob;
+            animation-duration: 2s;
+        }
